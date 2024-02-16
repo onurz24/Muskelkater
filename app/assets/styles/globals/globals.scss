@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./_css-resets.scss";
+@import "./_mixins.scss";
+@import "./_variables.scss";
+@import "./_media-queries.scss";
+
+/*@media (prefers-color-scheme: dark) {}*/
+html{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+html,body{
+  width: 100%;
+}
+body{
+  @include zentrieren();
+  padding: .5em;
+}
+
+
