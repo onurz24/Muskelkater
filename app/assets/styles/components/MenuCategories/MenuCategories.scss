@@ -4,49 +4,54 @@
 @import "../../globals/_media-queries.scss";
 @import "../../globals/_font-face";
 
-
-
-.Menu_Categories{
+.Menu_Categories {
     @include zentrieren();
     @apply bg-stone-200;
     border-radius: 8px;
     border: 2px solid rgb(163, 163, 163);
-    .Menu_Categorie{
+    .Menu_Categorie {
         padding: .5em;
         width: 800px;
-
-
-        @media screen and (max-width : 900px ) {
+        @media screen and (max-width: 900px) {
             width: 500px;
         }
-        @media screen and (max-width : 500px ) {
+        @media screen and (max-width: 500px) {
             width: 100%;
         }
-        @media screen and (max-width : 300px ) {
-        }
-        .Menu_Categorie_Headline{
-            @include zentrieren(baseline,center,row);
+        .Menu_Categorie_Headline {
+            @include zentrieren(baseline, center, row);
             font-size: 20px;
         }
-        .MenuOptions{
-            .Menu_Option{
+        .MenuOptions {
+            .Menu_Option {
                 padding: .5em 0 .5em 1em;
                 cursor: pointer;
-                &:active,&:hover{
-                    background-color: gray;
-                    border-radius: 8px;
-                    transition: all .1s ease-in-out;
-                    .Menu_Option_Headline{
-                        color: white;
-                    }
-                }
-                .Menu_Option_Headline{
+                .Menu_Option_Headline {
                     color: #797979;
-                    @include zentrieren(baseline,center,row);
+                    @include zentrieren(baseline, center, row);
                     gap: .25em;
                 }
-                .Menu_Option_Text{
-                    
+                .Menu_Option_Text {
+                }
+            }
+        }
+        @media (hover: hover) and (pointer: fine) {
+            .Menu_Option:hover {
+                background-color: gray;
+                border-radius: 8px;
+                transition: all .1s ease-in-out;
+                .Menu_Option_Headline {
+                    color: white;
+                }
+            }
+        }
+        @media (hover: none) and (pointer: coarse) {
+            .Menu_Option:active {
+                background-color: gray;
+                border-radius: 8px;
+                transition: all .1s ease-in-out;
+                .Menu_Option_Headline {
+                    color: white;
                 }
             }
         }

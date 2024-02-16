@@ -113,7 +113,7 @@ export const MenuCategories = ({}:MenuCategoriesProps) => {
                 MenuOptions={[
                     {
                         ID: 16,
-                        Text: "PTs Zeigen mit Schwerpunkt und Website",
+                        Text: "PTs Schwerpunkte & Website",
                         Path: "/trainer_netzwerk/pt_schwerpunkt"
                     }
                 ]}
