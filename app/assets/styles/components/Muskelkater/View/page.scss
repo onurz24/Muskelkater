@@ -1,0 +1,22 @@
+@import "../../../globals/_css-resets";
+@import "../../../globals/_mixins";
+@import "../../../globals/_variables";
+
+.Muskelkater_View{
+    background-color: black;
+    color: white;
+    height: 400px;
+    width: 50%;
+    @media screen and (max-width: $Mobile_L_Breakpoint) {
+        width: 100%;
+
+    }
+    .Muskelkater_Progressbar{
+        filter: hue-rotate(90deg);
+        width: 100%;
+    }
+    .Muskelkater_Canvas{
+    background-color: gray;
+        cursor: pointer;
+    }
+}
